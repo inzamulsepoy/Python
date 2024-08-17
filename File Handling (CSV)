@@ -1,0 +1,14 @@
+import csv
+p=open("demo.csv", "w" , newline='')
+
+empdata=csv.writer(p)
+empdata.writerow(["Empid", "Emp Name", "Salary"])
+for i in range (3):
+  empid=int (input ("Enter ID: ")) 
+  empname=input ("Enter Name : ")
+  empsalary=int (input ("Enter Salary : ")) 
+  empinfo= [empid, empname, empsalary] 
+  empdata.writerow(empinfo)
+p.close()
+I
+
